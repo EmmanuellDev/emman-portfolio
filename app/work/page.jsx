@@ -13,13 +13,13 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Hackverse Project",
     title: "project - 1",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, suscipit soluta! Quidem, ipsum.",
-    stack: [{ name: "Html 5" }, { name: "Tailwind css" }, { name: "React.js" }, { name: "Next.js" },],
-    image: '/ph0.jpg',
-    live: "",
-    github: "",
+    description: "Created a frontend page for my team website in Hackverse Hackathon ",
+    stack: [{ name: "Html 5" }, { name: "Tailwind css" }, { name: "React.js" },],
+    image: '/project-1.jpg',
+    live: "https://github.com/EmmanuellDev/hackverse-24",
+    github: "https://github.com/EmmanuellDev/hackverse-24",
   },
 ]
 
@@ -38,7 +38,7 @@ const Work = () => {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent-hover transition-all duration-500 capitalize">{project.category} Project</h2>
+              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent-hover transition-all duration-500 capitalize">{project.category}</h2>
               <p className="text-white/60">{project.description}</p>
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
