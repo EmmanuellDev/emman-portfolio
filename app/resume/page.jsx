@@ -185,7 +185,7 @@ const Resume = () => {
                       return ( <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                         <span className="text-accent-hover">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
-                        <div className="flex items-center gap-3">
+                        <div className="flex place-items-baseline gap-3">
                           <span className="w-[6px] h-[6px] rounded-full bg-accent-hover"></span>
                           <p className="text-white/60">{item.institution}</p>
                         </div>
@@ -227,8 +227,8 @@ const Resume = () => {
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
-                      <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
-                        <span className="text-white/60">{item.fieldName}</span>
+                      <li key={index} className="flex justify-center sm:text-start items-center xl:justify-start gap-4">
+                        <span className="text-white/60">{item.fieldName}:</span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>
                     );
